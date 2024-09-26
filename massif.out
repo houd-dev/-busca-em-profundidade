@@ -1,0 +1,694 @@
+desc: --massif-out-file=massif.out
+cmd: ./dfs
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=12005685
+mem_heap_B=126832
+mem_heap_extra_B=10352
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=26469692
+mem_heap_B=2494896
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=43461760
+mem_heap_B=2574988
+mem_heap_extra_B=352876
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=55002946
+mem_heap_B=2629828
+mem_heap_extra_B=545372
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=65768688
+mem_heap_B=2681836
+mem_heap_extra_B=696348
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=87269389
+mem_heap_B=2789904
+mem_heap_extra_B=922240
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=100530327
+mem_heap_B=2859228
+mem_heap_extra_B=1023972
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=117767164
+mem_heap_B=2953476
+mem_heap_extra_B=1120868
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=128698881
+mem_heap_B=3015768
+mem_heap_extra_B=1165496
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=149426923
+mem_heap_B=3140824
+mem_heap_extra_B=1218248
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=163246415
+mem_heap_B=3229176
+mem_heap_extra_B=1235208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=173205247
+mem_heap_B=3295136
+mem_heap_extra_B=1238944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=186048129
+mem_heap_B=3382556
+mem_heap_extra_B=1237004
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=204758237
+mem_heap_B=3519188
+mem_heap_extra_B=1219796
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=219911102
+mem_heap_B=3635068
+mem_heap_extra_B=1197948
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=228813797
+mem_heap_B=3706892
+mem_heap_extra_B=1181876
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3706892 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n2: 1211996 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 1211996 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 1211996 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 1211996 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 1211996 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 606792 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 606792 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 606792 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 605204 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 605204 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 605204 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 21168 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=244286973
+mem_heap_B=3835648
+mem_heap_extra_B=1151432
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3835648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n2: 1340752 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 1340752 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 1340752 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 1340752 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 1340752 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 670840 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 670840 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 670840 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 669912 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 669912 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 669912 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 21168 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=261626283
+mem_heap_B=3989076
+mem_heap_extra_B=1113820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=273223264
+mem_heap_B=4096232
+mem_heap_extra_B=1089632
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=290409894
+mem_heap_B=4264052
+mem_heap_extra_B=1056436
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=305823147
+mem_heap_B=4424372
+mem_heap_extra_B=1030036
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4424372 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n2: 1929476 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 1929476 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 1929476 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 1929476 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 1929476 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 968436 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 968436 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 968436 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 961040 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 961040 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 961040 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 21168 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=314905553
+mem_heap_B=4522560
+mem_heap_extra_B=1015744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=468893864
+mem_heap_B=4524496
+mem_heap_extra_B=1015496
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=489594395
+mem_heap_B=4618624
+mem_heap_extra_B=1016928
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=503612739
+mem_heap_B=4678528
+mem_heap_extra_B=1017824
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=515136148
+mem_heap_B=4722048
+mem_heap_extra_B=1018504
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4722048 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n2: 2222048 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2029536 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 2029536 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2029536 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 2029536 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 1017036 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 1017036 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1017036 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 1012500 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 1012500 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1012500 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n1: 192512 0x10CCF9: allocate (alloc_traits.h:482)
+   n2: 192512 0x10CCF9: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:583)
+    n1: 192000 0x10C1F5: void std::deque<int, std::allocator<int> >::_M_push_back_aux<int const&>(int const&) (deque.tcc:497)
+     n1: 192000 0x10B4E0: std::deque<int, std::allocator<int> >::push_back(int const&) (stl_deque.h:1548)
+      n1: 192000 0x10A9C6: std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) (stl_stack.h:261)
+       n1: 192000 0x10A224: Grafo::dfsNaoRecursivo(int) (dfs_recursivo_e_nao_recursivo.cpp:54)
+        n0: 192000 0x109465: main (dfs_recursivo_e_nao_recursivo.cpp:91)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 26272 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=528076750
+mem_heap_B=4772736
+mem_heap_extra_B=1019216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=548811207
+mem_heap_B=4837760
+mem_heap_extra_B=1020232
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4837760 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n2: 2332640 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2029536 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 2029536 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2029536 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 2029536 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 1017036 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 1017036 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1017036 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 1012500 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 1012500 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1012500 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n1: 303104 0x10CCF9: allocate (alloc_traits.h:482)
+   n2: 303104 0x10CCF9: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:583)
+    n1: 302592 0x10C1F5: void std::deque<int, std::allocator<int> >::_M_push_back_aux<int const&>(int const&) (deque.tcc:497)
+     n1: 302592 0x10B4E0: std::deque<int, std::allocator<int> >::push_back(int const&) (stl_deque.h:1548)
+      n1: 302592 0x10A9C6: std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) (stl_stack.h:261)
+       n1: 302592 0x10A224: Grafo::dfsNaoRecursivo(int) (dfs_recursivo_e_nao_recursivo.cpp:54)
+        n0: 302592 0x109465: main (dfs_recursivo_e_nao_recursivo.cpp:91)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 31392 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=565211398
+mem_heap_B=4881792
+mem_heap_extra_B=1020920
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=577046216
+mem_heap_B=4909440
+mem_heap_extra_B=1021352
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=587926736
+mem_heap_B=4930944
+mem_heap_extra_B=1021688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=602748330
+mem_heap_B=4955520
+mem_heap_extra_B=1022072
+mem_stacks_B=0
+heap_tree=peak
+n4: 4955520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2450400 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2029536 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 2029536 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2029536 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 2029536 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 1017036 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 1017036 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1017036 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 1012500 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 1012500 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1012500 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n1: 420864 0x10CCF9: allocate (alloc_traits.h:482)
+   n2: 420864 0x10CCF9: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:583)
+    n1: 420352 0x10C1F5: void std::deque<int, std::allocator<int> >::_M_push_back_aux<int const&>(int const&) (deque.tcc:497)
+     n1: 420352 0x10B4E0: std::deque<int, std::allocator<int> >::push_back(int const&) (stl_deque.h:1548)
+      n1: 420352 0x10A9C6: std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) (stl_stack.h:261)
+       n1: 420352 0x10A224: Grafo::dfsNaoRecursivo(int) (dfs_recursivo_e_nao_recursivo.cpp:54)
+        n0: 420352 0x109465: main (dfs_recursivo_e_nao_recursivo.cpp:91)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 31392 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=613790231
+mem_heap_B=4969344
+mem_heap_extra_B=1022288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=625139718
+mem_heap_B=4989312
+mem_heap_extra_B=1022440
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=636766883
+mem_heap_B=4994944
+mem_heap_extra_B=1022528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=651877042
+mem_heap_B=4992384
+mem_heap_extra_B=1022488
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=662989514
+mem_heap_B=4981120
+mem_heap_extra_B=1022312
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4981120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2465760 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2029536 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 2029536 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2029536 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 2029536 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 1017036 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 1017036 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1017036 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 1012500 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 1012500 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1012500 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n1: 436224 0x10CCF9: allocate (alloc_traits.h:482)
+   n2: 436224 0x10CCF9: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:583)
+    n1: 435712 0x10C1F5: void std::deque<int, std::allocator<int> >::_M_push_back_aux<int const&>(int const&) (deque.tcc:497)
+     n1: 435712 0x10B4E0: std::deque<int, std::allocator<int> >::push_back(int const&) (stl_deque.h:1548)
+      n1: 435712 0x10A9C6: std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) (stl_stack.h:261)
+       n1: 435712 0x10A224: Grafo::dfsNaoRecursivo(int) (dfs_recursivo_e_nao_recursivo.cpp:54)
+        n0: 435712 0x109465: main (dfs_recursivo_e_nao_recursivo.cpp:91)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 41632 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=674168750
+mem_heap_B=4963200
+mem_heap_extra_B=1022032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=685250981
+mem_heap_B=4942720
+mem_heap_extra_B=1021712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=701812599
+mem_heap_B=4909952
+mem_heap_extra_B=1021200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=712835216
+mem_heap_B=4887424
+mem_heap_extra_B=1020848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=729371838
+mem_heap_B=4853632
+mem_heap_extra_B=1020320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=751280046
+mem_heap_B=4808576
+mem_heap_extra_B=1019616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=762315824
+mem_heap_B=4786048
+mem_heap_extra_B=1019264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=784414818
+mem_heap_B=4740992
+mem_heap_extra_B=1018560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=795644944
+mem_heap_B=4718464
+mem_heap_extra_B=1018208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=817859518
+mem_heap_B=4673408
+mem_heap_extra_B=1017504
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=829020225
+mem_heap_B=4650880
+mem_heap_extra_B=1017152
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4650880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2400000 0x10CE02: std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2400000 0x10B81E: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10B81E: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2400000 0x10AD53: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (vector.tcc:663)
+     n1: 2400000 0x10A526: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long) (stl_vector.h:1016)
+      n1: 2400000 0x109E72: Grafo::Grafo(int) (dfs_recursivo_e_nao_recursivo.cpp:19)
+       n0: 2400000 0x10934E: main (dfs_recursivo_e_nao_recursivo.cpp:81)
+ n2: 2135520 0x10D2B7: std::__new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:151)
+  n1: 2029536 0x10BE22: allocate (alloc_traits.h:482)
+   n1: 2029536 0x10BE22: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:381)
+    n1: 2029536 0x10B0E7: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (vector.tcc:459)
+     n2: 2029536 0x10A737: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:1292)
+      n1: 1017036 0x109F01: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:24)
+       n1: 1017036 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1017036 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+      n1: 1012500 0x109F2B: Grafo::adicionarAresta(int, int) (dfs_recursivo_e_nao_recursivo.cpp:25)
+       n1: 1012500 0x10A2F2: Grafo::gerarGrafoAleatorio(int) (dfs_recursivo_e_nao_recursivo.cpp:65)
+        n0: 1012500 0x109365: main (dfs_recursivo_e_nao_recursivo.cpp:82)
+  n1: 105984 0x10CCF9: allocate (alloc_traits.h:482)
+   n2: 105984 0x10CCF9: std::_Deque_base<int, std::allocator<int> >::_M_allocate_node() (stl_deque.h:583)
+    n1: 105472 0x10C1F5: void std::deque<int, std::allocator<int> >::_M_push_back_aux<int const&>(int const&) (deque.tcc:497)
+     n1: 105472 0x10B4E0: std::deque<int, std::allocator<int> >::push_back(int const&) (stl_deque.h:1548)
+      n1: 105472 0x10A9C6: std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) (stl_stack.h:261)
+       n1: 105472 0x10A224: Grafo::dfsNaoRecursivo(int) (dfs_recursivo_e_nao_recursivo.cpp:54)
+        n0: 105472 0x109465: main (dfs_recursivo_e_nao_recursivo.cpp:91)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x49127AD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400416D: call_init (dl-init.c:74)
+   n1: 73728 0x400416D: call_init (dl-init.c:26)
+    n1: 73728 0x4004253: _dl_init (dl-init.c:121)
+     n0: 73728 0x401B19F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 41632 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=840213408
+mem_heap_B=4628352
+mem_heap_extra_B=1016800
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=849128832
+mem_heap_B=4610432
+mem_heap_extra_B=1016520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=858144850
+mem_heap_B=4592512
+mem_heap_extra_B=1016240
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=867181552
+mem_heap_B=4574592
+mem_heap_extra_B=1015960
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=876182853
+mem_heap_B=4556672
+mem_heap_extra_B=1015680
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=885085571
+mem_heap_B=4185948
+mem_heap_extra_B=853356
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=893988342
+mem_heap_B=3207688
+mem_heap_extra_B=361568
+mem_stacks_B=0
+heap_tree=empty
