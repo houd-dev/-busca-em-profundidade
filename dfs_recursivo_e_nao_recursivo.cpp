@@ -22,12 +22,11 @@ public:
 
     void adicionarAresta(int v1, int v2) {
         adjacencias[v1].push_back(v2);
-        adjacencias[v2].push_back(v1);  // Para grafo não direcionado
+        adjacencias[v2].push_back(v1);
     }
 
     void dfsRecursivo(int source) {
         visitado[source] = true;
-        // Processar o nó
         for (int adj : adjacencias[source]) {
             if (!visitado[adj]) {
                 dfsRecursivo(adj);
@@ -46,7 +45,6 @@ public:
 
             if (!visitado[vertice]) {
                 visitado[vertice] = true;
-                // Processar o nó
             }
 
             for (int adj : adjacencias[vertice]) {
@@ -70,7 +68,7 @@ public:
 
 int main() {
     int sizes[] = {100, 200, 500, 1000, 100000};
-    ofstream resultados("resultados.txt");  // Arquivo para armazenar resultados
+    ofstream resultados("resultados.txt");
 
     if (!resultados.is_open()) {
         cerr << "Erro ao abrir o arquivo para escrita!" << endl;
@@ -79,7 +77,7 @@ int main() {
 
     for (int n : sizes) {
         Grafo grafo(n);
-        grafo.gerarGrafoAleatorio(n * 2);  // Gerando 2 arestas por nó para ter uma média
+        grafo.gerarGrafoAleatorio(n * 2);
 
         auto start = chrono::high_resolution_clock::now();
         grafo.dfsRecursivo(0);
@@ -94,7 +92,7 @@ int main() {
         resultados << "DFS Não-Recursivo para " << n << " nós: " << naoRecursivoTempo << " microsegundos" << endl;
     }
 
-    resultados.close();  // Fechar o arquivo
+    resultados.close();
     cout << "Resultados gravados em resultados.txt" << endl;
 
     return 0;
