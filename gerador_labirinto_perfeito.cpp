@@ -66,6 +66,29 @@ public:
         }
         arquivo.close();
     }
+
+    bool resolverLabirinto(int x, int y) {
+        if (x < 0 || y < 0 || x >= largura || y >= altura) return false;
+        if (grid[y][x] == 1) return false;
+        if (grid[y][x] == 2) return false;
+
+        if (x == largura - 1 && y == altura - 1) {
+            grid[y][x] = 2;
+            return true;
+        }
+
+        grid[y][x] = 2;
+
+        if (resolverLabirinto(x + 1, y) ||
+            resolverLabirinto(x - 1, y) ||
+            resolverLabirinto(x, y + 1) ||
+            resolverLabirinto(x, y - 1)) {
+            return true;
+        }
+
+        grid[y][x] = 0;
+        return false;
+    }
 };
 
 int main() {
@@ -77,6 +100,9 @@ int main() {
     Labirinto labirinto2(21, 21);
     labirinto2.gerarLabirintoNaoRecursivo(1, 1);
     labirinto2.salvarLabirinto("labirinto_nao_recursivo.ppm");
+
+    labirinto.resolverLabirinto(1, 1);
+    labirinto.salvarLabirinto("labirinto_resolvido.ppm");
 
     return 0;
 }
